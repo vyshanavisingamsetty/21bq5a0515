@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>cardnumber</title>
+</head>
+<body>
+<script>
+function cardnumber(inputtxt)
+{
+  var cardno = /^(?:3[47][0-9]{13})$/;
+  if(inputtxt.match(cardno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("Not a valid Amercican Express credit card number!");
+        return false;
+        }
+}
+document.write(cardnumber('2167895925974'));
+</script>
+</body>
+</html>
